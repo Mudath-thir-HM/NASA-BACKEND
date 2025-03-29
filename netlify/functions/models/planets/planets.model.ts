@@ -15,8 +15,8 @@ function isHabitable(planet: PlanetDataType) {
   );
 }
 
-export function loadPlanetsData() {
-  return new Promise<void>(
+export async function loadPlanetsData() {
+  return await new Promise<void>(
     (resolve: () => void, reject: (error: unknown) => void) => {
       fs.createReadStream(
         path.join(__dirname, "..", "..", "..", "..", "data", "KeplerData.csv")
