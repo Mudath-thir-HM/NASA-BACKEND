@@ -1,11 +1,11 @@
 {
   "name": "nasa-project-api",
   "version": "1.0.0",
-  "main": "dist/app.js",
+  "main": "dist/api.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "nodemon netlify/functions/src/app.ts",
-    "start": "node netlify/functions/dist/app.js",
+    "watch": "nodemon netlify/functions/src/api.ts",
+    "start": "node netlify/functions/dist/api.js",
     "build": "npx tsc"
   },
   "keywords": [],

@@ -19,16 +19,7 @@ export function loadPlanetsData() {
   return new Promise<void>(
     (resolve: () => void, reject: (error: unknown) => void) => {
       fs.createReadStream(
-        path.join(
-          __dirname,
-          "..",
-          "..",
-          "..",
-          "..",
-          "..",
-          "data",
-          "KeplerData.csv"
-        )
+        path.join(__dirname, "..", "..", "..", "..", "data", "KeplerData.csv")
       )
         .pipe(
           parse({
