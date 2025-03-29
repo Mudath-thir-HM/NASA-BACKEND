@@ -1,0 +1,7 @@
+/package-lock.json
+/.env
+/dist
+/node_modules
+/public
+/.vscode
+/netlify/functions/dist

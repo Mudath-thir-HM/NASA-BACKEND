@@ -1,0 +1,33 @@
+{
+  "name": "nasa-project-api",
+  "version": "1.0.0",
+  "main": "dist/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "nodemon netlify/functions/src/app.ts",
+    "start": "node netlify/functions/dist/app.js",
+    "build": "npx tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Nasa Mission Control API",
+  "dependencies": {
+    "@netlify/functions": "^3.0.4",
+    "@types/csv-parse": "^1.1.12",
+    "@types/express": "^5.0.0",
+    "cors": "^2.8.5",
+    "csv-parse": "^5.6.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.9",
+    "serverless-http": "^3.2.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/morgan": "^1.9.9"
+  }
+}
