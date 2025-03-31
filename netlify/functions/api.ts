@@ -9,13 +9,11 @@ import { loadPlanetsData } from "./models/planets/planets.model";
 
 dotenv.config();
 
-const PORT = 8000;
-
 const app = express();
 
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: "https://euphonious-hotteok-d978fa.netlify.app",
   })
 );
 
