@@ -9,6 +9,8 @@ import { loadPlanetsData } from "./models/planets/planets.model";
 
 dotenv.config();
 
+const PORT = 8000;
+
 const app = express();
 
 app.use(
@@ -25,7 +27,7 @@ app.use(express.static(path.join(__dirname, "..", "public")));
 
 app.use("/api", routes);
 
-loadPlanetsData();
+// loadPlanetsData();
 
 // app.listen(PORT, () => {
 //   console.log(`listnening on port ${PORT}`);

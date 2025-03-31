@@ -44,6 +44,7 @@ export type PlanetDataType = {
   koi_slogg_err2: string;
   koi_srad: string;
   koi_srad_err1: string;
+  koi_srad_err2: string;
   ra: string;
   dec: string;
   koi_kepmag: string;
